@@ -1,0 +1,23 @@
+GET http://localhost:8080/hotel
+###
+POST http://localhost:8080/hotel
+Content-Type: application/json
+
+{
+  "name": "Elewen",
+  "homeNumber": "pp/kl",
+  "streetName": "Bobur",
+  "districtName": "Tashkent"
+}
+###
+GET http://localhost:8080/room/getByHotelId/
+###
+POST http://localhost:8080/room
+Content-Type: application/json
+
+{
+  "number": 14,
+  "floor": 5,
+  "size": 2,
+  "hotelId": 2
+}
